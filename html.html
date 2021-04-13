@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="css.css">
+
+  <title>G.M.N</title>
+</head>
+<body>
+      <div id="container">
+      	<!-- <input type="text" id="user"><button id="username">entre your name</button>	 -->
+<!--       	<p id="output"></p>
+ -->        <p>Guess a number between 1-100.</p>
+        <p id="outputtext"> enter a number below</p>
+        <p id="tries"></p>
+        <input type="text" id="userinput"><button onclick="mymusic()" id="btn">enter</button>
+        <audio id="music">
+        	<source src="clap.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="arcade" autoplay  loop>
+			<source src="arcade.mp3" type="audio/mpeg" >
+		</audio>
+        
+<script>
+	var mmusic = document.getElementById('arcade');
+	function mymusic(){
+	mmusic.play()
+	}
+ 	mymusic();
+// var y = document.getElementById("username");
+
+// 		y.addEventListener("click", function input() {
+
+// 		var put = document.getElementById('user').value;
+// 		document.getElementById("output").innerHTML = 'welcome '+ put
+// 	});
+
+
+
+
+var number = [Math.floor(Math.random()*100)]
+
+var x = document.getElementById("btn");
+		var counter = 6;
+
+	x.addEventListener("click", function myFunction(){
+		if(counter === 0){
+			console.log(counter ===0)
+		return document.getElementById("outputtext").innerHTML = "you lost ! but try again"
+		}
+		var input = document.getElementById('userinput').value;
+		if( input == number){
+		document.getElementById("outputtext").innerHTML = "Cangrats your guess is right." ;
+
+		var music = document.getElementById('music');
+		function playmusic(){
+			music.play()
+		}
+		playmusic();
+		}else if( input < number ){
+		document.getElementById("outputtext").innerHTML = "you guess low ! try again";
+		document.getElementById("tries").innerHTML= counter-=1
+		};
+		if (input > number){
+		document.getElementById("outputtext").innerHTML  = "you guessed high ! try again";
+		document.getElementById("tries").innerHTML= counter-=1
+	}
+});
+
+</script>
+</body>
+</html>
