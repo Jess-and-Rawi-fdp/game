@@ -28,10 +28,10 @@ main {
 h1{
 	cursor: pointer;
   	position: relative;
- 	 display: inline-block;
+ 	display: inline-block;
   	font-size: 3rem;
   	background: linear-gradient(to bottom, #fff, #fff 60%, #000 60%, #000 100%);
- 	 background-clip: text;
+ 	background-clip: text;
   	-webkit-background-clip: text;
   	color: transparent;
   	background-repeat: no-repeat;
@@ -63,14 +63,23 @@ p{
 	font-size: 25px;
 	text-align: center;
 }
+.frontpage{
+	position: absolute;
+	background-color: black;
+	height: 300px;
+	width: 500px;
+	left:518px;
+	top:214px;
+	border-radius: 10px;
+}
 
 #lw{
-	color: background-color: #fc5296;
+color: background-color: #fc5296;
 background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); ;
 	
 }
 #gmn{
-	color: background-color: #fc5296;
+color: background-color: #fc5296;
 background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); ;
 	
 }
@@ -82,8 +91,45 @@ background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); ;
 #user{
 	font-size: 30px;
 }
-#btn0{
+/*#btn0{
 background-color: white;
 text-align:bold;
 font-size: 30px;
+}*/
+
+#hair{
+	position: absolute;
+	right:10px;
+	top:100px;
+}
+#shirt{
+	position: absolute;
+	right:10px;
+	top:130px;
+}
+#pants{
+	position: absolute;
+	right:10px;
+	top:160px;
+}
+#boots{
+	position: absolute;
+	right:10px;
+	top:190px;
+}
+#male{
+	position: absolute;
+	left: 10px;
+	top:100px;
+
+}
+#female{
+	position: absolute;
+	left: 10px;
+	top: 120px;
+}
+#submit{
+	position: absolute;
+	left: 10px;
+	top: 150px;
 }
