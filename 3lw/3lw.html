@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="3lw.js"></script>
+	<link rel="stylesheet" href="3lw.css">
+	<title>3.letter.word</title>
+</head>
+<body>
+	<div id="container">
+		<p id='welcome'></p>
+	<h1>In this game you have to guess the word contains 3 letters.</h1>
+	<p id="space"></p>
+
+	<button   onclick="hint();mymuzic()" > START </button>
+	<input type="text" id="visitortry">
+	<button id="btn">give it a shot!</button>
+	
+	<p id="result"> is it right ? </p>
+	<audio id="music">
+		<source  src="calp.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="matrix" autoplay  loop>
+			<source src="matrix.mp3" type="audio/mpeg" >
+		</audio>
+
+	<script>
+		var muzic= document.getElementById('matrix')
+		function mymuzic(){
+			muzic.play()
+		}
+		mymuzic();
+
+	var words = ['age','cat','ask','bee','dog','bye','buy','day','die','cup','cow','egg','fox','gas','gun','guy','hip','jet','joy','lab','mom','mug','not','own','owl','pie','run','the','tea','you','wow'];
+	var randomWord = words[Math.floor(Math.random() * words.length )];
+	function hint (){
+	
+	var randomLetter = randomWord[Math.floor(Math.random() * randomWord.length)]
+	var res=document.getElementById("space").innerHTML = 'a word has ' + randomLetter +' in the ' + (randomWord.indexOf(randomLetter) +1) + ' postion.';
+	return res
+	}	
+
+	
+		var x = document.getElementById("btn");
+
+		x.addEventListener("click", function check() {
+
+		var input = document.getElementById('visitortry').value;
+		if( input === randomWord){
+		document.getElementById("result").innerHTML = "that's it yauyyyyy. 🙌🎉❤" ;
+		var music=document.getElementById('music');
+		function playMusic(){
+		music.play()
+		}
+		playMusic();
+		}	else if( input !== randomWord ){
+		document.getElementById("result").innerHTML = "ooh ! wrong but try again. 😒🤷‍";
+		}
+	});
+
+
+	</script>
+</body>
+</html>

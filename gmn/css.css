@@ -1,0 +1,30 @@
+body{
+	background-image: url('unnamed.gif')
+}
+#container{
+	background-color: navy;
+	border:5px solid white;
+	height: 400px;
+	width: 750px;
+	margin-top: 13%;
+	margin-left: 25%;
+	text-align: center;
+}
+p{
+	color: white;
+	font-size:24px;
+}
+#imput{
+	height: 50px;
+	width: 100px;
+	margin: 25px ;
+}
+#btn{
+	margin: 25px auto ;
+}
+#tries{
+	background-color: white;
+	background-size: 1px
+	border-radius: 10px;
+	color: black;
+}
