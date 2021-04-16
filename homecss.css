@@ -65,10 +65,11 @@ p{
 }
 .frontpage{
 	position: absolute;
-	background-color: black;
+	background-color: #FFFFFF;
+	background-image: linear-gradient(180deg, #8a867e 0%, #6284FF 50%, #cc9929 100%);
 	height: 300px;
 	width: 500px;
-	left:518px;
+	left:32%;
 	top:214px;
 	border-radius: 10px;
 }
@@ -91,12 +92,12 @@ background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); ;
 #user{
 	font-size: 30px;
 }
-/*#btn0{
+#btn0{
 background-color: white;
 text-align:bold;
 font-size: 30px;
-}*/
-
+}
+/*
 #hair{
 	position: absolute;
 	right:10px;
@@ -132,4 +133,64 @@ font-size: 30px;
 	position: absolute;
 	left: 10px;
 	top: 150px;
+}
+#body{
+	width: 50%;
+	height: 90%;
+	margin-top: 15px;
+}
+*/
+.hair{
+position: absolute;
+left: 70%
+}
+.shirt{
+position: absolute;
+left: 70%
+}
+.pants{
+position: absolute;
+left: 70%
+}
+.boots{
+position: absolute;
+left: 70%
+}
+#submit{
+position: absolute;
+left: 70%
+}
+#body{
+	position: fixed;
+	left: 38%;
+	height: 250px;
+	width:150px;
+	padding-top: 20px
+}
+.red{
+	background-color: red
+}
+.blue{
+	background-color: blue
+}
+.brown{
+	background-color: brown
+}
+.green{
+	background-color: green
+}
+.black{
+	background-color: black
+}
+#hair1{
+color: red
+}
+#shirt1{
+color: red
+}
+#pants1{
+color: red
+}
+#boots1{
+color: red
 }
