@@ -92,12 +92,8 @@ background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); ;
 #user{
 	font-size: 30px;
 }
-#btn0{
-background-color: white;
-text-align:bold;
-font-size: 30px;
-}
-/*
+//________________________________________________________________________________________________
+
 #hair{
 	position: absolute;
 	right:10px;
@@ -118,16 +114,7 @@ font-size: 30px;
 	right:10px;
 	top:190px;
 }
-#male{
-	position: absolute;
-	left: 10px;
-	top:100px;
 
-}
-#female{
-	position: absolute;
-	left: 10px;
-	top: 120px;
 }
 #submit{
 	position: absolute;
@@ -139,7 +126,7 @@ font-size: 30px;
 	height: 90%;
 	margin-top: 15px;
 }
-*/
+
 .hair{
 position: absolute;
 left: 70%
@@ -159,13 +146,6 @@ left: 70%
 #submit{
 position: absolute;
 left: 70%
-}
-#body{
-	position: fixed;
-	left: 38%;
-	height: 250px;
-	width:150px;
-	padding-top: 20px
 }
 .red{
 	background-color: red
@@ -193,4 +173,48 @@ color: red
 }
 #boots1{
 color: red
+}
+.hair1{
+	position: absolute;
+	height:115px;
+	width: 110px;
+	margin-top: 20px;
+	right: 49.5%;
+	z-index: 10 ;
+
+}
+.shirt1{
+	position: absolute;
+	height:125px;
+	width: 130px;
+	margin-top: 110px;
+	right: 49.5%;
+	z-index: 10 ;
+
+}
+.pants1{
+	position: absolute;
+	height:105px;
+	width: 100px;
+	margin-top: 160px;
+	right: 50%;
+	z-index: 10 ;
+
+}
+.boots1{
+	position: absolute;
+	height:105px;
+	width: 100px;
+	margin-top: 200px;
+	/*left: 2%;*/
+	right: 50%;
+	z-index: 10 ;
+}
+#body{
+	position: relative;
+	z-index: 1;
+	height: 250px;
+	width:150px;
+	padding-top: 15px;
+	margin-right: 115px;
 }
